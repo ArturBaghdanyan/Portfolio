@@ -56,7 +56,7 @@ const Projects: FC<IProjectType> = ({ project }) => {
         </SwiperSlide>
       ))}
 
-      <div className="flex justify-end gap-x-3 mt-5">
+      <div className="flex justify-end gap-x-3 mt-5 text-[#16a7d3]">
         <SwiperButtons />
       </div>
     </Swiper>

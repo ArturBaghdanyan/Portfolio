@@ -1,13 +1,14 @@
 'use client';
 import { useRef } from "react";
 
-import bgImage from "../../../public/backgroundImage.jpg";
 import AboutPage from "../AboutPage";
 import WhoAmI from "../Article";
 import Contact from "../Contact";
 import Header from "../header/header";
 import ProjectsList from "../Projects";
 import MySkills from "../skills";
+// @ts-ignore
+import bgImage from "../../../public/backgroundImage.jpg";
 
 const RootPage = () => {
   const myRef = useRef<HTMLDivElement | null>(null);
