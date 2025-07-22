@@ -33,9 +33,9 @@ const RootPage = () => {
         <Header
           myRef={myRef}
           aboutRef={aboutRef}
+          skillsRef={skillsRef}
           projectsRef={projectsRef}
           contactRef={contactRef}
-          skillsRef={skillsRef}
         />
         <WhoAmI />
       </div>

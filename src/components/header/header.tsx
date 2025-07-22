@@ -1,4 +1,4 @@
-import React, {FC, RefObject, useState} from "react";
+import React, {FC, RefObject, useRef, useState} from "react";
 
 import style from "./style.module.css";
 
@@ -42,7 +42,8 @@ const Header: FC<IProps> = ({myRef, aboutRef, skillsRef, projectsRef, contactRef
           </div>
         </div>
 
-        <ul className={`${style.header_container_nav} hidden uppercase cursor-pointer
+        <ul className={`${style.
+          header_container_nav} hidden uppercase cursor-pointer
                        gap-3 no-underline md:flex lg:flex xl:flex`}>
           <li onClick={() => executeScroll(myRef)} className='relative grow'>Home</li>
           <li onClick={() => executeScroll(aboutRef)} className='relative grow'>About</li>
@@ -59,13 +60,15 @@ const Header: FC<IProps> = ({myRef, aboutRef, skillsRef, projectsRef, contactRef
         </button>
       </div>
 
-      {showNav && (
         <div
           style={{zIndex: 99}}
-          className={`${style.transitionOpacity} fixed top-0 right-0 w-64 min-h-screen pt-14 px-10
+          className={`
+          ${style.transitionOpacity} 
+          ${showNav ? style.transitionOpacity_active : ''}
+              fixed top-0 right-0 w-64 min-h-screen pt-14 px-10
               bg-[#2F4F4F] text-[rgb(234,179,8)] flex flex-col items-center gap-5
               overflow-x-hidden
-              ${showNav ? 'translate-x-0' : 'translate-x-full'}`}
+            `}
         >
           <button className='w-8 h-8 text-white fixed z-10 top-4 right-1 text-center cursor-pointer'
                   onClick={clickItems}>
@@ -82,7 +85,6 @@ const Header: FC<IProps> = ({myRef, aboutRef, skillsRef, projectsRef, contactRef
             <li onClick={() => executeScroll(contactRef)}>Contact</li>
           </ul>
         </div>
-      )}
     </header>
   );
 };
