@@ -1,8 +1,9 @@
-@import 'repeated.css';
+@import "repeated.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -26,6 +27,5 @@
 html,
 body {
   overflow-x: hidden;
-  background-color: #1f2937;
+  background-color: #e8e8e8;
 }
-

@@ -1,13 +1,12 @@
-'use client';
-import { useRef } from "react";
+"use client";
 
+import { useRef } from "react";
 import AboutPage from "../AboutPage";
 import WhoAmI from "../Article";
 import Contact from "../Contact";
 import Header from "../header/header";
 import ProjectsList from "../Projects";
 import MySkills from "../skills";
-// @ts-ignore
 import bgImage from "../../../public/backgroundImage.jpg";
 
 const RootPage = () => {
@@ -20,7 +19,7 @@ const RootPage = () => {
   const divStyle = {
     backgroundImage: `url(${bgImage.src})`,
     width: "100%",
-    height: "400px",
+    height: "800px",
     backgroundAttachment: "fixed",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -40,21 +39,25 @@ const RootPage = () => {
         <WhoAmI />
       </div>
 
-      <main className='flex flex-col mt-10 gap-y-8'>
+      <main className="flex flex-col mt-10 gap-y-8">
         <section ref={aboutRef}>
           <AboutPage />
         </section>
-        <section ref={skillsRef} className="bg-[#111827]">
+
+        <section ref={skillsRef} className="bg-[#e4eaed]">
           <MySkills />
         </section>
-        <section ref={projectsRef} className="bg-[#1f2937]">
+
+        <section ref={projectsRef}>
           <ProjectsList />
         </section>
-        <section ref={contactRef} className="bg-[#111827]">
+
+        <section ref={contactRef} className="bg-[#2F4F4F] text-white">
           <Contact />
         </section>
       </main>
     </>
   );
 };
+
 export default RootPage;

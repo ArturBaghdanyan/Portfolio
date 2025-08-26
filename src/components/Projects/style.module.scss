@@ -1,0 +1,73 @@
+.projects {
+  > li {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: black;
+      transition: width 0.3s ease-in;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+}
+.card {
+  position: relative;
+  opacity: 1 !important;
+  transform: none !important;
+
+  &_overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover &_overlay {
+    opacity: 0.5;
+  }
+
+  &_overlay_text {
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: rgb(48, 119, 224);
+      transition: width 0.3s ease-in;
+    }
+
+    &:hover {
+      color: rgb(246, 34, 2);
+    }
+  }
+}

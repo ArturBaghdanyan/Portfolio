@@ -1,6 +1,7 @@
+import { useSwiper } from "swiper/react";
+
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
-import { useSwiper } from "swiper/react";
 
 export const SwiperButtons = () => {
   const swiper = useSwiper();

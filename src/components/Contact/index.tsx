@@ -13,19 +13,35 @@ const urls = {
 
 const Contact = () => {
   return (
-    <div className='flex items-center justify-end mx-auto my-4 container-spacing'>
-      <div className='flex items-center gap-x-3'>
-        <Link href={urls.gmail} target="_blank" className='w-5 h-5 flex justify-center items-center'>
-          <SiGmail width={25} height={25} className='w-full h-auto'/>
+    <div className="flex items-center justify-end mx-auto my-4 container-spacing">
+      <div className="flex items-center gap-x-3">
+        <Link
+          href={urls.gmail}
+          target="_blank"
+          className="w-5 h-5 flex justify-center items-center"
+        >
+          <SiGmail width={25} height={25} className="w-full h-auto" />
         </Link>
-        <Link href={urls.facebook} target="_blank" className='w-5 h-5 flex justify-center items-center'>
-          <FaFacebook width={25} height={25} className='w-full h-auto'/>
+        <Link
+          href={urls.facebook}
+          target="_blank"
+          className="w-5 h-5 flex justify-center items-center"
+        >
+          <FaFacebook width={25} height={25} className="w-full h-auto" />
         </Link>
-        <Link href={urls.github} target="_blank" className='w-5 h-5 flex justify-center items-center'>
-          <FaGithub width={25} height={25} className='w-full h-auto'/>
+        <Link
+          href={urls.github}
+          target="_blank"
+          className="w-5 h-5 flex justify-center items-center"
+        >
+          <FaGithub width={25} height={25} className="w-full h-auto" />
         </Link>
-        <Link href={urls.linkedin} target="_blank" className='w-5 h-5 flex justify-center items-center'>
-          <FaLinkedin width={20} height={20} className='w-full h-auto'/>
+        <Link
+          href={urls.linkedin}
+          target="_blank"
+          className="w-5 h-5 flex justify-center items-center"
+        >
+          <FaLinkedin width={20} height={20} className="w-full h-auto" />
         </Link>
       </div>
     </div>

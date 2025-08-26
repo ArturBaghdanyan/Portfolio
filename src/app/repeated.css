@@ -1,6 +1,5 @@
 .title {
   font-size: 1.125rem;
-  color: #e0e0e0;
   font-weight: bold;
   height: auto;
   width: 20%;
@@ -24,7 +23,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(247, 255, 5, 0.945),
+    rgb(11 227 39 / 95%),
     transparent
   );
   animation: swipe 3s linear infinite;
@@ -50,7 +49,7 @@
   }
 }
 a {
-  color: white !important;
+  color: white;
 }
 .container-spacing {
   padding: 0 4rem;
